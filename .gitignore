@@ -1,0 +1,43 @@
+# Jupyter and Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Data and results are not stored in the repository, except the three analysis panels
+outputs/*
+!outputs/final_panel/
+outputs/final_panel/*
+run_*/
+*.csv
+!data/*.csv
+!outputs/final_panel/panel_final_main_local_p90_with_p95_2016_2023.csv
+!outputs/final_panel/panel_final_local_p90_2016_2023.csv
+!outputs/final_panel/panel_final_local_p95_2016_2023.csv
+*.parquet
+*.nc
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+
+# Operating system and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Third-party raw datasets (never uploaded)
+data/raw/
+
+# Input data copied into data/ (not uploaded for now; remove these lines to include them)
+data/grids/
+data/cbd/
+data/temperature/
+data/smod_0514.*
+data/natural_earth/
