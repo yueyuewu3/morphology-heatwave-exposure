@@ -3,13 +3,12 @@
 __pycache__/
 *.pyc
 
-# Data and results are not stored in the repository, except the six analysis panels
+# Results are not stored in the repository, except the six analysis panels
 outputs/*
 !outputs/final_panel/
 outputs/final_panel/*
 run_*/
 *.csv
-!data/*.csv
 !outputs/final_panel/panel_final_*_2016_2023.csv
 *.parquet
 *.nc
@@ -30,12 +29,6 @@ desktop.ini
 .vscode/
 .idea/
 
-# Third-party raw datasets (never uploaded)
+# Input data in data/ are part of the repository; third-party raw datasets in data/raw/ are not
+!data/**
 data/raw/
-
-# Input data copied into data/ (not uploaded for now; remove these lines to include them)
-data/grids/
-data/cbd/
-data/temperature/
-data/smod_0514.*
-data/natural_earth/

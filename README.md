@@ -42,8 +42,7 @@ The folder `data/` holds the small input files that most notebooks read:
 | `data/temperature/` | Daily maximum and minimum 2 m temperature of the study grid cells, 2016–2025 (one NetCDF file per city, from ERA5-Land), and the manifest listing the files with their SHA-256 checksums |
 | `data/natural_earth/` | Natural Earth 1:110m land and coastline (base map of Fig. 1) |
 
-The two CSV tables are part of the repository. The other files are distributed with the data deposit of the
-paper (see its Data availability statement) and are placed in `data/` as shown above.
+All files in `data/` are part of the repository (sources and licences under *Input data* below).
 
 The large third-party datasets are read from `data/raw/`, one subfolder per dataset (see *Input data* below).
 They are not part of the repository and have to be obtained from their providers.
@@ -127,6 +126,11 @@ the cells from top to bottom.
 
 The file names expected in each folder are given in the configuration block of the cell that reads it. See the
 Data availability statement of the paper for access details.
+
+The files in `data/temperature` contain modified Copernicus Climate Change Service information (2026); neither the
+European Commission nor ECMWF is responsible for any use of this information. The study boundary in
+`data/smod_0514.shp` is derived from GHS-SMOD (European Commission, Joint Research Centre; CC BY 4.0). Natural Earth
+data are in the public domain.
 
 ## Software
 
