@@ -67,11 +67,19 @@ Results are written to `outputs/`, one subfolder per step:
 | `figures/<figure>`, `tables` | `07_figures` |
 
 Each step writes to its own fixed subfolder and later steps read from there; running a step again replaces its
-earlier results. Of `outputs/`, only the three analysis panels in `outputs/final_panel/` are part of the repository:
-`panel_final_main_local_p90_with_p95_2016_2023.csv` (read by `05_shap`, `06_simulation` and `07_figures`) and
-`panel_final_local_p90_2016_2023.csv` and `panel_final_local_p95_2016_2023.csv` (read by `04_dml`). With them,
-`04_dml` and `05_shap` can be run directly. The other result tables are distributed with the data deposit of the
-paper and are placed in the subfolders shown above.
+earlier results. Of `outputs/`, only the six analysis panels in `outputs/final_panel/` are part of the repository:
+
+| File | Heatwave definition | Read by |
+|---|---|---|
+| `panel_final_main_local_p90_with_p95_2016_2023.csv` | Local 90th percentile, with the local 95th-percentile outcomes added | `05_shap`, `06_simulation`, `07_figures` |
+| `panel_final_local_p90_2016_2023.csv` | Local 90th percentile | `04_dml` |
+| `panel_final_local_p95_2016_2023.csv` | Local 95th percentile | `04_dml` |
+| `panel_final_city_p90_2016_2023.csv` | City-wide 90th percentile | `04_dml` |
+| `panel_final_city_p95_2016_2023.csv` | City-wide 95th percentile | `04_dml` |
+| `panel_final_fixed_tx35_tn25_2016_2023.csv` | Fixed thresholds (Tmax 35 °C, Tmin 25 °C) | `04_dml` |
+
+With them, `04_dml` and `05_shap` can be run directly. The other result tables are distributed with the data
+deposit of the paper and are placed in the subfolders shown above.
 
 ## Order of execution
 

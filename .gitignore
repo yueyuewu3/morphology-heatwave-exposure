@@ -3,16 +3,14 @@
 __pycache__/
 *.pyc
 
-# Data and results are not stored in the repository, except the three analysis panels
+# Data and results are not stored in the repository, except the six analysis panels
 outputs/*
 !outputs/final_panel/
 outputs/final_panel/*
 run_*/
 *.csv
 !data/*.csv
-!outputs/final_panel/panel_final_main_local_p90_with_p95_2016_2023.csv
-!outputs/final_panel/panel_final_local_p90_2016_2023.csv
-!outputs/final_panel/panel_final_local_p95_2016_2023.csv
+!outputs/final_panel/panel_final_*_2016_2023.csv
 *.parquet
 *.nc
 *.tif
